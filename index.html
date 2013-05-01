@@ -19,6 +19,16 @@
 
 </head>
 <body>
+	<script id="entry-template" type="text/x-handlebars-template">
+		<div class="rowX">
+			<div class="four columns">
+				<h3>{{library}} - latest: {{latest_version}}</h3>
+				{{#each cdns}}
+					<a class="button small" id="{{../library}}-{{this.name}}" data-clipboard-text="{{this.url}}" class="button">{{this.name}}({{this.version}})</a>
+				{{/each}}
+			</div>
+		</div>
+	</script>
 
 	<div class="row">
 		<div class="twelve columns">
@@ -29,21 +39,39 @@
 
 	<div class="row">
 		<div class="nine columns">
+			<div class="row">
+		<div class="twelve columns">
+
 				<h4>Getting Started</h4>
 				<p>I was sick of having to google the url for different libraries in order to experiment with them. Hopefully this might save you some time. Just click on the button the url will be copied to your clipboard.</p>
+			</div>
+			</div>
+			<div class="row">
+
+		<div class="twelve columns">
+				<div class="panel">
+					suggest form
+				</div>
+			</div>
+		</div>
 		</div>
 		<div class="three columns">
 			<div class="panel">
 				<h4>Options</h4>
 				<span>Script Tags:</span>
 				<ul class="button-group radious">
-					<li><a href="" class="small button">On</a></li>
+					<li><a href="" class="small button active ">On</a></li>
 					<li><a href="" class="small button">Off</a></li>
 				</ul>
 				<span>Production:</span>
 				<ul class="button-group radious">
-					<li><a href="" class="small button">On</a></li>
+					<li><a href="" class="small button active ">On</a></li>
 					<li><a href="" class="small button">Off</a></li>
+				</ul>
+				<span>Behavior:</span>
+				<ul class="button-group radious">
+					<li><a href="" class="small button active ">Copy</a></li>
+					<li><a href="" class="small button">View</a></li>
 				</ul>
 			</div>
 		</div>
@@ -53,74 +81,18 @@
 			<h3>Biggest Players</h3>
 		</div>
 	</div>
-	<div class="row">
-		<div class="twelve columns">
-			<div class="row">
-				<div class="five columns">
-					<h5>Jquery</h5>
-					<ul class="button-group radius">
-						<li><a href="" id="jquery_o" class="button" data-clipboard-text="http://code.jquery.com/jquery-1.9.1.min.js">Official(v1.9.1)</a></li>
-						<li><a href="" id="jquery_go" class="button" data-clipboard-text="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js">Google(v2)</a></li>
-						<li><a href="" id="jquery_m" class="button" data-clipboard-text="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.0.min.js">Microsoft(v2)</a></li>
-						<li><a href="" id="jquery_gi" class="button" data-clipboard-text="">Github</a></li>
-					</ul>
-				</div>
-				<div class="four columns">
-					<h5>Backbone</h5>
-					<ul class="button-group radius">
-						<li><a href="" class="button">Official</a></li>
-						<li><a href="" class="button">Cloudflare</a></li>
-						<li><a href="" class="button">Github</a></li>
-					</ul>
-				</div>
-				<div class="three columns">
-					<h5>Zepto</h5>
-					<ul class="button-group radius">
-						<li><a href="" class="button">Official</a></li>
-						<li><a href="" class="button">Cloudflare</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<div class="three columns">
-					<h5>Jquery Mobile</h5>
-					<ul class="button-group radius">
-						<li><a href="" class="button">Official</a></li>
-						<li><a href="" class="button">Google</a></li>
-					</ul>
-				</div>
-				<div class="three columns">
-					<h5>Jquery Ui</h5>
-					<ul class="button-group radius">
-						<li><a href="" class="button">Official</a></li>
-						<li><a href="" class="button">Cloudflare</a></li>
-					</ul>
-				</div>
-				<div class="three columns">
-					<h5>Angular</h5>
-					<ul class="button-group radius">
-						<li><a href="" class="button">Official</a></li>
-						<li><a href="" class="button">Cloudflare</a></li>
-					</ul>
-				</div>
-				<div class="three columns">
-					<h5>Ember</h5>
-					<ul class="button-group radius">
-						<li><a href="" class="button">Official</a></li>
-						<li><a href="" class="button">Cloudflare</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+	<div class="row content">
+		<!-- the content will go here -->
 	</div>
-
 
 	<!-- Included JS Files (Uncompressed) -->
 	<script src="javascripts/foundation/jquery.js"></script>
 
 	<script src="javascripts/vendor/zeroClipboard.js"></script>
 
-	// <!-- <script src="javascripts/foundation/jquery.foundation.alerts.js"></script>
+	<script src="javascripts/vendor/handlebars.js"></script>
+
+ <!-- <script src="javascripts/foundation/jquery.foundation.alerts.js"></script>
 
 	// <script src="javascripts/foundation/jquery.foundation.buttons.js"></script>
 

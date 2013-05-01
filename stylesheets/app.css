@@ -888,7 +888,7 @@ form.custom .custom.disabled {
 /* The Grid ---------------------- */
 /* line 3, ../../../../.rvm/gems/ruby-1.9.3-p327/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
 .row {
-  width: 1000px;
+  width: 95%;
   max-width: 100%;
   min-width: 768px;
   margin: 0 auto;
@@ -2317,7 +2317,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 }
 /* line 33, ../../../../.rvm/gems/ruby-1.9.3-p327/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_topbar.scss */
 .contain-to-grid .top-bar {
-  max-width: 1000px;
+  max-width: 95%;
   margin: 0 auto;
 }
 /* line 38, ../../../../.rvm/gems/ruby-1.9.3-p327/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_topbar.scss */
@@ -6030,4 +6030,8 @@ table.hide-for-medium {
   .top-bar ul > li.has-button a.button {
     margin: 0;
   }
+}
+/* line 1, ../sass/_styles.scss */
+.active {
+  background-color: #2284a1;
 }
