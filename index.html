@@ -15,32 +15,29 @@
 	<!-- Included CSS Files -->
 	<link rel="stylesheet" href="stylesheets/app.css">
 
-	<script src="javascripts/foundation/modernizr.foundation.js"></script>
 
 </head>
 <body>
 	<script id="entry-template" type="text/x-handlebars-template">
-		<div class="rowX">
-			<div class="four columns">
-				<h3>{{library}} - latest: {{latest_version}}</h3>
-				{{#each cdns}}
-					<a class="button small" id="{{../library}}-{{this.name}}" data-clipboard-text="{{this.url}}" class="button">{{this.name}}({{this.version}})</a>
-				{{/each}}
-			</div>
+		<div class="large-4 columns">
+			<h3>{{library}} - latest: {{latest_version}}</h3>
+			{{#each cdns}}
+				<a class="button small" id="{{../library}}-{{this.name}}" data-clipboard-text="{{this.url}}" class="button">{{this.name}}({{this.version}})</a>
+			{{/each}}
 		</div>
 	</script>
 
-	<div class="row">
-		<div class="twelve columns">
+	<!-- <div class=""> -->
+		<!-- <div class=""> -->
 			<h2>CDNatives</h2>
 			<hr />
-		</div>
-	</div>
+		<!-- </div> -->
+	<!-- </div> -->
 
 	<div class="row">
-		<div class="nine columns">
+		<div class="large-9 columns">
 			<div class="row">
-		<div class="twelve columns">
+		<div class="large-12 columns">
 
 				<h4>Getting Started</h4>
 				<p>I was sick of having to google the url for different libraries in order to experiment with them. Hopefully this might save you some time. Just click on the button the url will be copied to your clipboard.</p>
@@ -48,66 +45,82 @@
 			</div>
 			<div class="row">
 
-		<div class="twelve columns">
+		<div class="large-12 columns">
 				<div class="panel">
 					suggest form
 				</div>
 			</div>
 		</div>
 		</div>
-		<div class="three columns">
-			<div class="panel">
-				<h4>Options</h4>
-				<span>Script Tags:</span>
-				<ul class="button-group radious">
-					<li><a href="" class="small button active ">On</a></li>
-					<li><a href="" class="small button">Off</a></li>
-				</ul>
-				<span>Production:</span>
-				<ul class="button-group radious">
-					<li><a href="" class="small button active ">On</a></li>
-					<li><a href="" class="small button">Off</a></li>
-				</ul>
-				<span>Behavior:</span>
-				<ul class="button-group radious">
-					<li><a href="" class="small button active ">Copy</a></li>
-					<li><a href="" class="small button">View</a></li>
-				</ul>
+		<div class="large-3 columns">
+		<div class="panel">
+			<h4>Options</h4>
+			<div class="row">
+				<div class="large-6 columns">
+					<span>Script Tags:</span>
+					<ul class="button-group radious option" data-option="tags">
+						<li><a href="" class="small button active ">On</a></li>
+						<li><a href="" class="small button">Off</a></li>
+					</ul>
+				</div class="large-6 columns">
+				<div>
+					<span>Production:</span>
+					<ul class="button-group radious option" data-option="production">
+						<li><a href="" class="small button active ">On</a></li>
+						<li><a href="" class="small button">Off</a></li>
+					</ul>
+				</div>
 			</div>
+			<div class="row">
+				<div class="large-12 columns">
+					<span>Behavior:</span>
+					<ul class="button-group radious option" data-option="copy">
+						<li><a href="" class="small button active ">Copy</a></li>
+						<li><a href="" class="small button">View</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		</div>
 	</div>
 	<div class="row">
-		<div class="twelve columns">
+		<div class="large-12 columns">
 			<h3>Biggest Players</h3>
 		</div>
 	</div>
 	<div class="row content">
 		<!-- the content will go here -->
 	</div>
-
+	<footer>
+		<div class="row">
+			<div class="large-12 columns">
+				this will be the footer
+			</div>
+		</div>
+	</footer>
 	<!-- Included JS Files (Uncompressed) -->
-	<script src="javascripts/foundation/jquery.js"></script>
+	<script src="javascripts/vendor/jquery.js"></script>
 
 	<script src="javascripts/vendor/zeroClipboard.js"></script>
 
 	<script src="javascripts/vendor/handlebars.js"></script>
 
- <!-- <script src="javascripts/foundation/jquery.foundation.alerts.js"></script>
+ <!-- // <script src="javascripts/foundation/jquery.foundation.alerts.js"></script> -->
 
-	// <script src="javascripts/foundation/jquery.foundation.buttons.js"></script>
+	<!-- // <script src="javascripts/foundation/jquery.foundation.buttons.js"></script> -->
 
-	// <script src="javascripts/foundation/jquery.foundation.clearing.js"></script>
+	<!-- // <script src="javascripts/foundation/jquery.foundation.clearing.js"></script> -->
 
-	// <script src="javascripts/foundation/jquery.foundation.navigation.js"></script>
+	<!-- // <script src="javascripts/foundation/jquery.foundation.navigation.js"></script> -->
 
-	// <script src="javascripts/foundation/jquery.foundation.orbit.js"></script>
+	<!-- // <script src="javascripts/foundation/jquery.foundation.orbit.js"></script> -->
 
-	// <script src="javascripts/foundation/jquery.foundation.reveal.js"></script>
+	 <!-- // <script src="javascripts/foundation/jquery.foundation.reveal.js"></script> -->
 
-	// <script src="javascripts/foundation/jquery.foundation.tabs.js"></script> -->
+	<!-- // <script src="javascripts/foundation/jquery.foundation.tabs.js"></script> -->
 
   <!-- Application Javascript, safe to override -->
-  <script src="javascripts/foundation/app.js"></script>
+  <!-- // <script src="javascripts/foundation/app.js"></script> -->
   <script src="javascripts/scripts/script.js"></script>
 </body>
 </html>

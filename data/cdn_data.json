@@ -6,38 +6,38 @@
 			{
 				"name": "Official",
 				"version": "v1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1.js"
+				"url": "http://code.jquery.com/jquery-1.9.1"
 			},
 			{
 				"name": "Google",
 				"version": "v2",
-				"url": "http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"
+				"url": "http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min"
 			},
 			{
 				"name": "Microsoft",
 				"version": "v2",
-				"url": "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.0.js"
+				"url": "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.0"
 			}
 		]
 	},
 	{
-		"library": "backbone",
+		"library": "ember",
 		"latest_version": "2.0.0",
 		"cdns": [
 			{
 				"name": "official",
 				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1.js"
+				"url": "wasd"
 			},
 			{
 				"name": "randomw",
 				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1.js"
+				"url": "http://code.jquery.com/jquery-1.9.1"
 			},
 			{
 				"name": "random2",
 				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1.js"
+				"url": "http://code.jquery.com/jquery-1.9.1"
 			}
 		]
 	},
@@ -48,17 +48,17 @@
 			{
 				"name": "offiwercial",
 				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1.js"
+				"url": "http://code.jquery.com/jquery-1.9.1"
 			},
 			{
 				"name": "randweromw",
 				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1.js"
+				"url": "http://code.jquery.com/jquery-1.9.1"
 			},
 			{
 				"name": "randghjom2",
 				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1.js"
+				"url": "http://code.jquery.com/jquery-1.9.1"
 			}
 		]
 	},
@@ -69,17 +69,59 @@
 			{
 				"name": "offasdicial",
 				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1.js"
+				"url": "http://code.jquery.com/jquery-1.9.1"
 			},
 			{
 				"name": "raasdndomw",
 				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1.js"
+				"url": "http://code.jquery.com/jquery-1.9.1"
 			},
 			{
 				"name": "randoasdm2",
 				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1.js"
+				"url": "http://code.jquery.com/jquery-1.9.1"
+			}
+		]
+	},
+	{
+		"library": "underscore",
+		"latest_version": "2.0.0",
+		"cdns": [
+			{
+				"name": "offiwercial",
+				"version": "1.9.1",
+				"url": "http://code.jquery.com/jquery-1.9.1"
+			},
+			{
+				"name": "randweromw",
+				"version": "1.9.1",
+				"url": "http://code.jquery.com/jquery-1.9.1"
+			},
+			{
+				"name": "randghjom2",
+				"version": "1.9.1",
+				"url": "http://code.jquery.com/jquery-1.9.1"
+			}
+		]
+	},
+	{
+		"library": "ember",
+		"latest_version": "2.0.0",
+		"cdns": [
+			{
+				"name": "offasdicial",
+				"version": "1.9.1",
+				"url": "http://code.jquery.com/jquery-1.9.1"
+			},
+			{
+				"name": "raasdndomw",
+				"version": "1.9.1",
+				"url": "http://code.jquery.com/jquery-1.9.1"
+			},
+			{
+				"name": "randoasdm2",
+				"version": "1.9.1",
+				"url": "http://code.jquery.com/jquery-1.9.1"
 			}
 		]
 	},
@@ -90,17 +132,17 @@
 			{
 				"name": "asd",
 				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1.js"
+				"url": "http://code.jquery.com/jquery-1.9.1"
 			},
 			{
 				"name": "asdasd",
 				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1.js"
+				"url": "http://code.jquery.com/jquery-1.9.1"
 			},
 			{
 				"name": "asdasdadasd",
 				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1.js"
+				"url": "http://code.jquery.com/jquery-1.9.1"
 			}
 		]
 	}
