@@ -18,29 +18,8 @@ header,
 hgroup,
 main,
 nav,
-section,
-summary {
+section {
     display: block;
-}
-
-/**
- * Correct `inline-block` display not defined in IE 8/9.
- */
-
-audio,
-canvas,
-video {
-    display: inline-block;
-}
-
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-
-audio:not([controls]) {
-    display: none;
-    height: 0;
 }
 
 /**
@@ -54,29 +33,6 @@ audio:not([controls]) {
 /* ==========================================================================
    Base
    ========================================================================== */
-
-/**
- * 1. Prevent system color scheme's background color being used in Firefox, IE,
- *    and Opera.
- * 2. Prevent system color scheme's text color being used in Firefox, IE, and
- *    Opera.
- * 3. Set default font family to sans-serif.
- * 4. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-
-html {
-    background: #fff; /* 1 */
-    color: #000; /* 2 */
-    font-family: sans-serif; /* 3 */
-    -ms-text-size-adjust: 100%; /* 4 */
-    -webkit-text-size-adjust: 100%; /* 4 */
-}
-
-/**
- * Remove default margin.
- */
-
 body {
     margin: 0;
 }
@@ -152,32 +108,12 @@ hr {
 }
 
 /**
- * Address styling not present in IE 8/9.
- */
-
-mark {
-    background: #ff0;
-    color: #000;
-}
-
-/**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
 
-code,
-kbd,
-pre,
-samp {
+code {
     font-family: monospace, serif;
     font-size: 1em;
-}
-
-/**
- * Improve readability of pre-formatted text in all browsers.
- */
-
-pre {
-    white-space: pre-wrap;
 }
 
 /**
@@ -220,22 +156,9 @@ sub {
    Embedded content
    ========================================================================== */
 
-/**
- * Remove border when inside `a` element in IE 8/9.
- */
-
 img {
     border: 0;
 }
-
-/**
- * Correct overflow displayed oddly in IE 9.
- */
-
-svg:not(:root) {
-    overflow: hidden;
-}
-
 /* ==========================================================================
    Figures
    ========================================================================== */
@@ -376,16 +299,6 @@ button::-moz-focus-inner,
 input::-moz-focus-inner {
     border: 0;
     padding: 0;
-}
-
-/**
- * 1. Remove default vertical scrollbar in IE 8/9.
- * 2. Improve readability and alignment in all browsers.
- */
-
-textarea {
-    overflow: auto; /* 1 */
-    vertical-align: top; /* 2 */
 }
 
 /* ==========================================================================
