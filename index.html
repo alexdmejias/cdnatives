@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -7,19 +6,15 @@
 <head>
 	<meta charset="utf-8" />
 
-	<!-- Set the viewport width to device width for mobile -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<title>Welcome to Foundation</title>
+	<title>CDNatives</title>
 
-	<!-- Included CSS Files -->
 	<link rel="stylesheet" href="stylesheets/app.css">
-
-
 </head>
 <body>
 	<script id="entry-template" type="text/x-handlebars-template">
-		<div class="large-4 columns">
+		<div class="large-5">
 			<h3>{{library}} - latest: {{latest_version}}</h3>
 			{{#each cdns}}
 				<a class="button small" id="{{../library}}-{{this.name}}" data-clipboard-text="{{this.url}}" class="button">{{this.name}}({{this.version}})</a>
@@ -27,42 +22,35 @@
 		</div>
 	</script>
 
-	<!-- <div class=""> -->
-		<!-- <div class=""> -->
-			<h2>CDNatives</h2>
-			<hr />
-		<!-- </div> -->
-	<!-- </div> -->
+	<h2>CDNatives</h2>
+	<hr />
 
 	<div class="row">
-		<div class="large-9 columns">
+		<div class="large-9">
 			<div class="row">
-		<div class="large-12 columns">
-
-				<h4>Getting Started</h4>
-				<p>I was sick of having to google the url for different libraries in order to experiment with them. Hopefully this might save you some time. Just click on the button the url will be copied to your clipboard.</p>
-			</div>
+				<div class="large-12">
+					<h4>Getting Started</h4>
+					<!-- <p>I was sick of having to google the url for different libraries in order to experiment with them. Hopefully this might save you some time. Just click on the button the url will be copied to your clipboard.</p> -->
+				</div>
 			</div>
 			<div class="row">
-
-		<div class="large-12 columns">
-				<div class="panel">
-					suggest form
+				<div class="large-12">
+					<div class="panel">
+						suggest form
+					</div>
 				</div>
 			</div>
 		</div>
-		</div>
-		<div class="large-3 columns">
-		<div class="panel">
+		<div class="large-3">
 			<h4>Options</h4>
 			<div class="row">
-				<div class="large-6 columns">
+				<div class="large-6">
 					<span>Script Tags:</span>
 					<ul class="button-group radious option" data-option="tags">
 						<li><a href="" class="small button active ">On</a></li>
 						<li><a href="" class="small button">Off</a></li>
 					</ul>
-				</div class="large-6 columns">
+				</div class="large-6">
 				<div>
 					<span>Production:</span>
 					<ul class="button-group radious option" data-option="production">
@@ -72,7 +60,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="large-12 columns">
+				<div class="large-12">
 					<span>Behavior:</span>
 					<ul class="button-group radious option" data-option="copy">
 						<li><a href="" class="small button active ">Copy</a></li>
@@ -81,10 +69,9 @@
 				</div>
 			</div>
 		</div>
-		</div>
 	</div>
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="large-12">
 			<h3>Biggest Players</h3>
 		</div>
 	</div>
@@ -93,7 +80,7 @@
 	</div>
 	<footer>
 		<div class="row">
-			<div class="large-12 columns">
+			<div class="large-12">
 				this will be the footer
 			</div>
 		</div>
