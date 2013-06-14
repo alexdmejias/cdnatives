@@ -14,7 +14,7 @@
 </head>
 <body>
 	<script id="entry-template" type="text/x-handlebars-template">
-		<div class="large-5">
+		<div class="large-12 item">
 			<h3>{{library}} - latest: {{latest_version}}</h3>
 			{{#each cdns}}
 				<a class="button small" id="{{../library}}-{{this.name}}" data-clipboard-text="{{this.url}}" class="button">{{this.name}}({{this.version}})</a>
@@ -25,12 +25,12 @@
 	<h2>CDNatives</h2>
 	<hr />
 
-	<div class="row">
+	<div class="row intro">
 		<div class="large-9">
 			<div class="row">
 				<div class="large-12">
 					<h4>Getting Started</h4>
-					<!-- <p>I was sick of having to google the url for different libraries in order to experiment with them. Hopefully this might save you some time. Just click on the button the url will be copied to your clipboard.</p> -->
+					<p>I was sick of having to google the url for different libraries in order to experiment with them. Hopefully this might save you some time. Just click on the button the url will be copied to your clipboard.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -41,32 +41,22 @@
 				</div>
 			</div>
 		</div>
-		<div class="large-3">
+		<div class="large-3 last">
 			<h4>Options</h4>
-			<div class="row">
-				<div class="large-6">
-					<span>Script Tags:</span>
-					<ul class="button-group radious option" data-option="tags">
-						<li><a href="" class="small button active ">On</a></li>
-						<li><a href="" class="small button">Off</a></li>
-					</ul>
-				</div class="large-6">
-				<div>
-					<span>Production:</span>
-					<ul class="button-group radious option" data-option="production">
-						<li><a href="" class="small button active ">On</a></li>
-						<li><a href="" class="small button">Off</a></li>
-					</ul>
-				</div>
+				<div class="large-6" data-option="tags">
+				<span>Script Tags:</span>
+				<a href="" class="button fixed active ">On</a>
+				<a href="" class="button fixed">Off</a>
+			</div class="large-6">
+			<div data-option="production">
+				<span>Production:</span>
+				<a href="" class="button fixed active ">On</a>
+				<a href="" class="button fixed">Off</a>
 			</div>
-			<div class="row">
-				<div class="large-12">
-					<span>Behavior:</span>
-					<ul class="button-group radious option" data-option="copy">
-						<li><a href="" class="small button active ">Copy</a></li>
-						<li><a href="" class="small button">View</a></li>
-					</ul>
-				</div>
+			<div class="large-12" data-option="copy">
+				<span>Behavior:</span>
+				<a href="" class="button fixed active ">Copy</a>
+				<a href="" class="button fixed">View</a>
 			</div>
 		</div>
 	</div>
@@ -92,22 +82,14 @@
 
 	<script src="javascripts/vendor/handlebars.js"></script>
 
- <!-- // <script src="javascripts/foundation/jquery.foundation.alerts.js"></script> -->
-
-	<!-- // <script src="javascripts/foundation/jquery.foundation.buttons.js"></script> -->
-
-	<!-- // <script src="javascripts/foundation/jquery.foundation.clearing.js"></script> -->
-
-	<!-- // <script src="javascripts/foundation/jquery.foundation.navigation.js"></script> -->
+	<!-- // <script src="javascripts/foundation/jquery.foundation.alerts.js"></script> -->
 
 	<!-- // <script src="javascripts/foundation/jquery.foundation.orbit.js"></script> -->
 
-	 <!-- // <script src="javascripts/foundation/jquery.foundation.reveal.js"></script> -->
+	<!-- // <script src="javascripts/foundation/jquery.foundation.reveal.js"></script> -->
 
 	<!-- // <script src="javascripts/foundation/jquery.foundation.tabs.js"></script> -->
 
-  <!-- Application Javascript, safe to override -->
-  <!-- // <script src="javascripts/foundation/app.js"></script> -->
   <script src="javascripts/scripts/script.js"></script>
 </body>
 </html>

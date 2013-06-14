@@ -6,9 +6,10 @@ $grid-padding: $gutter-width;
 .row {
 	@include container;
 }
-.content:first-child {
+.intro:last-child {
 	background: red;
-	}
+}
+
 
 .large-2 {@include span-columns(2); }
 .large-3 {@include span-columns(3); }
@@ -21,3 +22,8 @@ $grid-padding: $gutter-width;
 .large-10 {@include span-columns(10); }
 .large-11 {@include span-columns(11); }
 .large-12 {@include span-columns(12); }
+
+
+.last {
+	margin: 0;
+}
