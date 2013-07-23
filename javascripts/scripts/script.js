@@ -1,10 +1,9 @@
 $(document).ready(function(){
-	var App = {
+	App = {
 		tags: true,
 		production: true,
 		copy: true
 	};
-	// var tags = false;
 
 	var moviePath = 'javascripts/vendor/ZeroClipboard.swf';
 	var content = $('.content');
@@ -19,21 +18,24 @@ $(document).ready(function(){
 		}
 	});
 
-	function toggle_button(elem) {
-		$(elem).parents('ul').children('li').children('a').removeClass('active');
-		$(elem).addClass('active');
-		console.log($(elem).parents('ul').data('option'));
-		if(App[$(elem).parents('ul').data('option')] === false) {
-			App[$(elem).parents('ul').data('option')] = true;
+	function toggle_button(button) {
+		$(button).siblings().removeClass('active').end().addClass('active');
+	}
+
+	function change_option(button) {
+		var target = $(button).parent('div').data('option');
+		if(App[target] == true) {
+			App[target] = false;
 		} else {
-			App[$(elem).parents('ul').data('option')] = false;
+			App[target] = true;
 		}
 	}
 
-	$('.option .button').on('click', function(e) {
+	$('.options').on('click','.button', function(e){
 		e.preventDefault();
 		toggle_button(e.currentTarget);
-	});
+		change_option(e.currentTarget);
+	})
 
 	function ajax_success(data) {
 		var source   = $("#entry-template").html();
