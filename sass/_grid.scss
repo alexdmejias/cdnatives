@@ -24,6 +24,10 @@ $grid-padding: $gutter-width;
 .large-12 {@include span-columns(12); }
 
 
+.full {
+	width: 100%;
+}
+
 .last {
 	margin: 0;
 }
