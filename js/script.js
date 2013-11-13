@@ -5,11 +5,11 @@ $(document).ready(function(){
 		copy: true
 	};
 
-	var moviePath = 'javascripts/vendor/ZeroClipboard.swf';
+	var moviePath = 'js/vendor/ZeroClipboard.swf';
 	var content = $('.content');
 	var template;
 	$.ajax({
-		url: '../../data/cdn_data.json',
+		url: '../data/cdn_data.json',
 		success: function(data){
 			ajax_success(data);
 		},
