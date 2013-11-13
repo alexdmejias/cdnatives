@@ -71,18 +71,19 @@ module.exports = function(grunt) {
       }
     },
 
-    recess: {
-      options: {
-        compile: true,
-        banner: '<%= banner %>'
-      },
-      bootstrap: {
+    less: {
+      dev: {
+        options: {
+          dumpLineNumbers: 'comments'
+        },
         src: ['less/bs/bootstrap.less','less/styles.less'],
         dest: 'css/styles.css'
       },
       min: {
         options: {
-          compress: true
+          compress: true,
+          cleancss: true,
+          report: 'min'
         },
         src: ['less/bs/bootstrap.less','less/styles.less'],
         dest: 'css/styles.min.css'
@@ -96,13 +97,6 @@ module.exports = function(grunt) {
         dest: 'dist/'
       }
     },
-
-/*    qunit: {
-      options: {
-        inject: 'js/tests/unit/phantom.js'
-      },
-      files: ['js/tests/*.html']
-    },*/
 
     connect: {
       server: {
@@ -131,13 +125,10 @@ module.exports = function(grunt) {
         files: '<%= jshint.src.src %>',
         tasks: ['jshint:src']
       },
-/*      test: {
-        files: '<%= jshint.test.src %>',
-        tasks: ['jshint:test', 'qunit']
-      },*/
-      recess: {
+
+      less: {
         files: 'less/**/*.less',
-        tasks: ['recess']
+        tasks: ['less:dev']
       }
     }
   });
@@ -149,13 +140,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  // grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-html-validation');
-  // grunt.loadNpmTasks('grunt-jekyll');
-  grunt.loadNpmTasks('grunt-recess');
 
   // Docs HTML validation task
   grunt.registerTask('validate-html', ['validation']);
