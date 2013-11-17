@@ -14,7 +14,7 @@
 </head>
 <body>
 	<script id="entry-template" type="text/x-handlebars-template">
-		<div class="large-12 item">
+		<div class="item">
 			<h3>{{library}} - latest: {{latest_version}}</h3>
 			{{#each cdns}}
 				<a class="button small" id="{{../library}}-{{this.name}}" data-clipboard-text="{{this.url}}" class="button">{{this.name}}({{this.version}})</a>
@@ -22,59 +22,40 @@
 		</div>
 	</script>
 
-	<h2>CDNatives</h2>
-	<hr />
+	<header>
+		<h2>CDNatives</h2>
+		<hr />
+	</header>
 
-	<div class="row intro">
-		<div class="large-9">
-			<div class="row">
-				<div class="large-12">
-					<h4>Getting Started</h4>
-					<p>I was sick of having to google the url for different libraries in order to experiment with them. Hopefully this might save you some time. Just click on the button the url will be copied to your clipboard.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-12">
-					<div class="panel">
-						suggest form
-					</div>
-				</div>
-			</div>
+	<div class="wrap intro">
+		<div class="instructions">
+			<h4>Getting Started</h4>
+			<p>I was sick of having to google the url for different libraries in order to experiment with them. Hopefully this might save you some time. Just click on the button the url will be copied to your clipboard.</p>
 		</div>
-		<div class="large-3 options last">
+		<div class="controls">
 			<h4>Options</h4>
-			<div class="full" data-option="tags">
+			<div data-option="tags">
 				<span>Script Tags:</span>
 				<a href="" class="button fixed active">On</a>
 				<a href="" class="button fixed">Off</a>
 			</div>
-			<div class="full" data-option="production">
+			<div data-option="production">
 				<span>Production:</span>
 				<a href="" class="button fixed active">On</a>
 				<a href="" class="button fixed">Off</a>
 			</div>
-			<div class="full" data-option="copy">
+			<div data-option="copy">
 				<span>Behavior:</span>
 				<a href="" class="button fixed active">Copy</a>
 				<a href="" class="button fixed">View</a>
 			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="large-12">
-			<h3>Biggest Players</h3>
-		</div>
+	<div class="wrap content">
 	</div>
-	<div class="row content">
-		<!-- the content will go here -->
-	</div>
-	<footer>
-		<div class="row">
-			<div class="large-12">
-				this will be the footer
-			</div>
-		</div>
-	</footer>
+<!-- 	<footer>
+			this will be the footer
+	</footer> -->
 	<!-- Included JS Files (Uncompressed) -->
 	<script src="js/vendor/jquery.js"></script>
 
