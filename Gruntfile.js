@@ -98,15 +98,6 @@ module.exports = function(grunt) {
       }
     },
 
-    connect: {
-      server: {
-        options: {
-          port: 3000,
-          base: '.'
-        }
-      }
-    },
-
     validation: {
       options: {
         reset: true,
@@ -127,14 +118,19 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      src: {
-        files: '<%= jshint.src.src %>',
-        tasks: ['jshint:src']
-      },
+      // src: {
+      //   files: '<%= jshint.src.src %>',
+      //   tasks: ['jshint:src']
+      // },
 
       less: {
         files: 'less/**/*.less',
         tasks: ['less:dev', 'growl:less']
+      },
+
+      livereload: {
+        options: { livereload: true },
+        files: ['css/styles.css', 'index.html']
       }
     }
   });
