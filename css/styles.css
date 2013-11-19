@@ -6418,3 +6418,18 @@ td.visible-print {
   background: #ccc;
   border-radius: 5px;
 }
+/* line 25, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+/* line 30, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+.item {
+  flex-basis: 33.333%;
+}
+/* line 34, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+.button {
+  display: inline-block;
+  margin-top: 10px;
+}

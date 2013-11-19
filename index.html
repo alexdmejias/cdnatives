@@ -16,9 +16,11 @@
 	<script id="entry-template" type="text/x-handlebars-template">
 		<div class="item">
 			<h3>{{library}} - latest: {{latest_version}}</h3>
-			{{#each cdns}}
-				<a class="button small" id="{{../library}}-{{this.name}}" data-clipboard-text="{{this.url}}" class="button">{{this.name}}({{this.version}})</a>
-			{{/each}}
+			<div class="cdns">
+				{{#each cdns}}
+					<a class="button small" id="{{../library}}-{{this.name}}" data-clipboard-text="{{this.url}}" class="button">{{this.name}}({{this.version}})</a>
+				{{/each}}
+			</div>
 		</div>
 	</script>
 
