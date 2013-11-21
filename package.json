@@ -17,6 +17,7 @@
     "grunt-recess": "~0.4.0",
     "grunt-contrib-less": "~0.8.1",
     "grunt-growl": "~0.1.5",
-    "grunt-uncss": "~0.1.5"
+    "grunt-uncss": "~0.1.5",
+    "grunt-compare-size": "~0.4.0-rc.3"
   }
 }

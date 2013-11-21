@@ -18,11 +18,6 @@ module.exports = function(grunt) {
               ' */\n\n',
     jqueryCheck: 'if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery") }\n\n',
 
-    // Task configuration.
-    clean: {
-      dist: ['dist']
-    },
-
     jshint: {
       gruntfile: {
         src: 'Gruntfile.js'
@@ -79,15 +74,6 @@ module.exports = function(grunt) {
         src: ['less/styles.less'],
         dest: 'css/styles.css'
       }
-      // min: {
-      //   options: {
-      //     compress: true,
-      //     cleancss: true,
-      //     report: 'min'
-      //   },
-      //   src: ['less/styles.less'],
-      //   dest: 'css/styles.min.css'
-      // }
     },
 
     growl: {
@@ -108,6 +94,16 @@ module.exports = function(grunt) {
       }
     },
 
+    compare_size: {
+      files: [
+        'css/styles.css',
+        'css/styles.min.css'
+      ],
+      options: {
+        cache: '.sizecache.json'
+      }
+    },
+
     watch: {
       less: {
         files: 'less/**/*.less',
@@ -123,7 +119,7 @@ module.exports = function(grunt) {
 
 
   // These plugins provide necessary tasks.
-  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-compare-size');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-uncss');
@@ -134,5 +130,6 @@ module.exports = function(grunt) {
 
   // JS distribution task.
   grunt.registerTask('dist-js', ['concat', 'uglify']);
+  grunt.registerTask('mincss', ['uncss', 'compare_size']);
 
 };
