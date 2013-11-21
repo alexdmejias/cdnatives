@@ -55,7 +55,7 @@ hr {
 }
 /* line 12, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
 body {
-  background: lavenderblush;
+  background: #e6e6e6;
 }
 /* line 16, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
 h3 {
@@ -142,4 +142,8 @@ a {
   .item {
     flex-basis: 22%;
   }
+}
+/* line 91, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+.random {
+  font-weight: bold;
 }
