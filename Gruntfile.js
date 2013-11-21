@@ -76,7 +76,7 @@ module.exports = function(grunt) {
         options: {
           dumpLineNumbers: 'comments'
         },
-        src: ['less/bs/bootstrap.less','less/styles.less'],
+        src: ['less/styles.less'],
         dest: 'css/styles.css'
       },
       min: {
@@ -85,7 +85,7 @@ module.exports = function(grunt) {
           cleancss: true,
           report: 'min'
         },
-        src: ['less/bs/bootstrap.less','less/styles.less'],
+        src: ['less/styles.less'],
         dest: 'css/styles.min.css'
       }
     },

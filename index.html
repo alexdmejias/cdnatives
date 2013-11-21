@@ -15,10 +15,10 @@
 <body>
 	<script id="entry-template" type="text/x-handlebars-template">
 		<div class="item">
-			<h3>{{library}} - latest: {{latest_version}}</h3>
+			<h3>{{library}}</h3>
 			<div class="cdns">
 				{{#each cdns}}
-					<a class="button small" id="{{../library}}-{{this.name}}" data-clipboard-text="{{this.url}}" class="button">{{this.name}}({{this.version}})</a>
+					<a class="button" id="{{../library}}-{{this.name}}" data-clipboard-text="{{this.url}}" class="button">{{this.name}}({{this.version}})</a>
 				{{/each}}
 			</div>
 		</div>
@@ -38,18 +38,18 @@
 			<h4>Options</h4>
 			<div data-option="tags">
 				<span>Script Tags:</span>
-				<a href="" class="button fixed active">On</a>
-				<a href="" class="button fixed">Off</a>
+				<a href="" class="button-small active">On</a>
+				<a href="" class="button-small">Off</a>
 			</div>
 			<div data-option="production">
 				<span>Production:</span>
-				<a href="" class="button fixed active">On</a>
-				<a href="" class="button fixed">Off</a>
+				<a href="" class="button-small active">On</a>
+				<a href="" class="button-small">Off</a>
 			</div>
 			<div data-option="copy">
 				<span>Behavior:</span>
-				<a href="" class="button fixed active">Copy</a>
-				<a href="" class="button fixed">View</a>
+				<a href="" class="button-small active">Copy</a>
+				<a href="" class="button-small">View</a>
 			</div>
 		</div>
 	</div>
