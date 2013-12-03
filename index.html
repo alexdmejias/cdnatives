@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" ng-app="cdnApp"> <!--<![endif]-->
 
 <head>
 	<meta charset="utf-8" />
@@ -12,17 +12,7 @@
 
 	<link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-	<script id="entry-template" type="text/x-handlebars-template">
-		<div class="item">
-			<h3>{{library}}</h3>
-			<div class="cdns">
-				{{#each cdns}}
-					<a class="button" id="{{../library}}-{{this.name}}" data-clipboard-text="{{this.url}}" class="button">{{this.name}}({{this.version}})</a>
-				{{/each}}
-			</div>
-		</div>
-	</script>
+<body ng-controller="cdnController">
 
 	<header>
 		<h2>CDNatives</h2>
@@ -32,7 +22,7 @@
 	<div class="wrap intro">
 		<div class="instructions">
 			<h4>Getting Started</h4>
-			<p>I was sick of having to google the url for different libraries in order to experiment with them. Hopefully this might save you some time. Just click on the button the url will be copied to your clipboard.</p>
+			<p>intro par.</p>
 		</div>
 		<div class="controls">
 			<h4>Options</h4>
@@ -52,19 +42,23 @@
 				<a href="" class="button-small">View</a>
 			</div>
 		</div>
+		<input type="search" ng-model="libsSearch">
 	</div>
 	<div class="wrap content">
+		<div class="item" ng-repeat="lib in libs | filter: libsSearch">
+			<h3>{{lib.name}} - {{lib.ver}}</h3>
+			<div class="cdns">
+				<a href="#" class="button" ng-repeat="cdn in lib.cdns">
+					{{cdn.name}}
+				</a>
+			</div>
+		</div>
 	</div>
 <!-- 	<footer>
 			this will be the footer
 	</footer> -->
-	<!-- Included JS Files (Uncompressed) -->
-	<script src="js/vendor/jquery.js"></script>
+	<script src="/bower_components/angular/angular.min.js"></script>
 
-	<script src="js/vendor/zeroClipboard.js"></script>
-
-	<script src="js/vendor/handlebars.js"></script>
-
-	<script src="js/script.js"></script>
+	<script src="/js/script.js"></script>
 </body>
 </html>

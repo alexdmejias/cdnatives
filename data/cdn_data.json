@@ -1,7 +1,7 @@
 [
 	{
-		"library": "jquery",
-		"latest_version": "2.0.0",
+		"name": "jquery",
+		"ver": "2.0.0",
 		"cdns": [
 			{
 				"name": "Official",
@@ -21,8 +21,8 @@
 		]
 	},
 	{
-		"library": "ember",
-		"latest_version": "2.0.0",
+		"name": "ember",
+		"ver": "2.0.0",
 		"cdns": [
 			{
 				"name": "official",
@@ -42,8 +42,8 @@
 		]
 	},
 	{
-		"library": "backbone",
-		"latest_version": "2.0.0",
+		"name": "backbone",
+		"ver": "2.0.0",
 		"cdns": [
 			{
 				"name": "offiwercial",
@@ -63,8 +63,8 @@
 		]
 	},
 	{
-		"library": "underscore",
-		"latest_version": "2.0.0",
+		"name": "underscore",
+		"ver": "2.0.0",
 		"cdns": [
 			{
 				"name": "offasdicial",
@@ -84,8 +84,8 @@
 		]
 	},
 	{
-		"library": "underscore",
-		"latest_version": "2.0.0",
+		"name": "underscore",
+		"ver": "2.0.0",
 		"cdns": [
 			{
 				"name": "offiwercial",
@@ -105,8 +105,8 @@
 		]
 	},
 	{
-		"library": "ember",
-		"latest_version": "2.0.0",
+		"name": "ember",
+		"ver": "2.0.0",
 		"cdns": [
 			{
 				"name": "offasdicial",
@@ -126,8 +126,8 @@
 		]
 	},
 	{
-		"library": "jquery ui",
-		"latest_version": "2.0.0",
+		"name": "jquery ui",
+		"ver": "2.0.0",
 		"cdns": [
 			{
 				"name": "asd",
