@@ -94,16 +94,6 @@ module.exports = function(grunt) {
       }
     },
 
-    compare_size: {
-      files: [
-        'css/styles.css',
-        'css/styles.min.css'
-      ],
-      options: {
-        cache: '.sizecache.json'
-      }
-    },
-
     watch: {
       less: {
         files: 'less/**/*.less',
@@ -119,7 +109,6 @@ module.exports = function(grunt) {
 
 
   // These plugins provide necessary tasks.
-  grunt.loadNpmTasks('grunt-compare-size');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-uncss');
@@ -130,6 +119,6 @@ module.exports = function(grunt) {
 
   // JS distribution task.
   grunt.registerTask('dist-js', ['concat', 'uglify']);
-  grunt.registerTask('mincss', ['uncss', 'compare_size']);
+  grunt.registerTask('mincss', ['uncss']);
 
 };
