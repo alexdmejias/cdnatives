@@ -66,79 +66,106 @@ h3 {
 a {
   text-decoration: none;
 }
-/* line 25, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+/* line 26, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 32, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+.cf:after {
+  clear: both;
+}
+/* line 36, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
 .wrap {
   margin: 0 auto;
   width: 90%;
 }
-/* line 29, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+/* line 40, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
 .intro {
   display: -ms-flexbox;
   display: -webkit-flexbox;
   display: flex;
   flex-direction: column;
 }
-/* line 36, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+/* line 47, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
 .instructions {
   flex: 3 0 0;
 }
-/* line 40, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+/* line 51, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
 .controls {
   flex: 1 0 0;
 }
-/* line 44, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+/* line 53, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+.controls span {
+  display: block;
+}
+/* line 58, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
 .button {
   padding: 10px;
   background: #262626;
   border-radius: 5px;
   display: block;
   margin: 0 0 10px;
-  width: 100%;
-  color: #fff0f5;
+  color: lavenderblush;
+  text-align: center;
 }
-/* line 54, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+/* line 69, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
 .button-small {
   padding: 10px;
   background: #262626;
   border-radius: 5px;
   display: block;
   margin: 0 0 10px;
-  width: 100%;
-  color: #fff0f5;
+  color: lavenderblush;
+  text-align: center;
   padding: 3px 9px;
+  float: left;
+  width: 50%;
+  border-radius: 5px 0 0 5px;
 }
-/* line 59, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+/* line 76, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+.button-small:last-child {
+  border-radius: 0 5px 5px 0;
+}
+/* line 80, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+.active {
+  background: #ff0000;
+}
+/* line 84, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
 .content {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 }
-/* line 65, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+/* line 90, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
 .item {
   flex-basis: 47%;
   text-align: center;
 }
 @media only screen and (min-width: 650px) {
-  /* line 70, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+  /* line 95, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
   .wrap {
     width: 80%;
   }
-  /* line 74, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+  /* line 99, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
   .intro {
     flex-direction: row;
   }
-  /* line 77, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+  /* line 102, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
   .item {
     flex-basis: 30%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 83, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+  /* line 108, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
   .wrap {
     width: 70%;
   }
-  /* line 86, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+  /* line 111, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
   .item {
     flex-basis: 23.5%;
   }

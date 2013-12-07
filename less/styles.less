@@ -22,6 +22,17 @@ a {
 	text-decoration: none;
 }
 
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
 .wrap {
 	margin:0 auto;
 	width: 90%;
@@ -39,22 +50,36 @@ a {
 
 .controls {
 	flex: 1 0 0;
+	span {
+		display: block;
+	}
 }
 
 .button {
 	padding: 10px;
 	background: @grey-dark;
-	border-radius: 5px;
+	border-radius: @border-radius;
 	display: block;
 	margin: 0 0 10px;
-	width: 100%;
-	color: lavenderblush
+	// width: 100%;
+	color: lavenderblush;
+	text-align: center;
 }
 
 .button-small {
 	.button;
 	padding: 3px 9px;
+	float: left;
+	width: 50%;
+	border-radius: @border-radius 0 0 @border-radius;
+
+	&:last-child {
+		border-radius: 0 @border-radius @border-radius 0;
+	}
 }
+	.active {
+		background: @active-button-background;
+	}
 
 .content {
 	display: flex;
