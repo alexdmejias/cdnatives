@@ -140,10 +140,6 @@ a {
   }
   /* line 86, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
   .item {
-    flex-basis: 22%;
+    flex-basis: 23.5%;
   }
-}
-/* line 91, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
-.random {
-  font-weight: bold;
 }
