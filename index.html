@@ -23,6 +23,8 @@
 		<div class="instructions">
 			<h4>Getting Started</h4>
 			<p>intro par.</p>
+			<label for="search">Search: </label>
+			<input type="search" ng-model="libsSearch" placeholder="eg: jQuery">
 		</div>
 		<div class="controls">
 			<h4>Options</h4>
@@ -42,7 +44,6 @@
 				<a href="" class="button-small">View</a>
 			</div>
 		</div>
-		<input type="search" ng-model="libsSearch">
 	</div>
 	<div class="wrap content">
 		<div class="item" ng-repeat="lib in libs | filter: libsSearch">
