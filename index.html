@@ -14,7 +14,7 @@
 </head>
 <body ng-controller="cdnController">
 
-	<header>
+	<header class="wrap">
 		<h2>CDNatives</h2>
 		<hr />
 	</header>
@@ -25,6 +25,7 @@
 			<p>intro par.</p>
 			<label for="search">Search: </label>
 			<input type="search" ng-model="libsSearch" placeholder="eg: jQuery">
+			<input type="text" placeholder="" ng-value="toCopy">
 		</div>
 		<div class="controls">
 			<h4>Options</h4>
@@ -49,7 +50,7 @@
 		<div class="item" ng-repeat="lib in libs | filter: libsSearch">
 			<h3>{{lib.name}} - {{lib.ver}}</h3>
 			<div class="cdns">
-				<a href="#" class="button" ng-repeat="cdn in lib.cdns">
+				<a href="#" class="button" ng-repeat="cdn in lib.cdns" ng-click="sendToInput(cdn.url)">
 					{{cdn.name}}
 				</a>
 			</div>
