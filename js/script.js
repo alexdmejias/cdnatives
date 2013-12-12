@@ -6,9 +6,19 @@ cdnApp.controller('cdnController', function($scope, $http) {
     })
 
     $scope.toCopy = 'no cdn selected';
+    $scope.optionTags = false;
+    $scope.optionProd = false;
 
     $scope.sendToInput = function(w) {
         $scope.toCopy = w;
+    }
+
+    $scope.toggleOption = function(option) {
+        if($scope[option] == true) {
+            $scope[option] = false;
+        } else {
+            $scope[option] = true;
+        }
     }
 
 });
