@@ -1,148 +1,74 @@
 [
 	{
 		"name": "jquery",
-		"ver": "2.0.0",
+		"ver": "v2.1",
 		"cdns": [
 			{
-				"name": "Official",
-				"version": "v1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1"
-			},
-			{
-				"name": "Google",
-				"version": "v2",
-				"url": "http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min"
+				"name": "cdnjs.com",
+				"urls": [
+					"//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js",
+					"//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"
+				]
 			},
 			{
 				"name": "Microsoft",
-				"version": "v2",
-				"url": "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.0"
-			}
-		]
-	},
-	{
-		"name": "ember",
-		"ver": "2.0.0",
-		"cdns": [
-			{
-				"name": "official",
-				"version": "1.9.1",
-				"url": "wasd"
+				"urls": [
+					"http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.js",
+					"http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.min.js"
+				]
 			},
 			{
-				"name": "randomw",
-				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1"
-			},
-			{
-				"name": "random2",
-				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1"
+				"name": "Google",
+				"urls": [
+					"//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js",
+					"//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"
+				]
 			}
 		]
 	},
 	{
 		"name": "backbone",
-		"ver": "2.0.0",
+		"ver": "1.1.2",
 		"cdns": [
 			{
-				"name": "offiwercial",
-				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1"
-			},
-			{
-				"name": "randweromw",
-				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1"
-			},
-			{
-				"name": "randghjom2",
-				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1"
+				"name": "cdnjs.com",
+				"urls": [
+					"//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js",
+					"//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"
+				]
 			}
 		]
 	},
 	{
 		"name": "underscore",
-		"ver": "2.0.0",
+		"ver": "1.6.0",
 		"cdns": [
 			{
-				"name": "offasdicial",
-				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1"
-			},
-			{
-				"name": "raasdndomw",
-				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1"
-			},
-			{
-				"name": "randoasdm2",
-				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1"
-			}
-		]
-	},
-	{
-		"name": "underscore",
-		"ver": "2.0.0",
-		"cdns": [
-			{
-				"name": "offiwercial",
-				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1"
-			},
-			{
-				"name": "randweromw",
-				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1"
-			},
-			{
-				"name": "randghjom2",
-				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1"
+				"name": "cdnjs.com",
+				"urls": [
+					"//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js",
+					"//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"
+				]
 			}
 		]
 	},
 	{
 		"name": "ember",
-		"ver": "2.0.0",
+		"ver": "1.4.0",
 		"cdns": [
 			{
-				"name": "offasdicial",
-				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1"
+				"name": "cdnjs.com",
+				"urls": [
+					"//cdnjs.cloudflare.com/ajax/libs/ember.js/1.4.0/ember.js",
+					"//cdnjs.cloudflare.com/ajax/libs/ember.js/1.4.0/ember.min.js"
+				]
 			},
 			{
-				"name": "raasdndomw",
-				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1"
-			},
-			{
-				"name": "randoasdm2",
-				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1"
-			}
-		]
-	},
-	{
-		"name": "jquery ui",
-		"ver": "2.0.0",
-		"cdns": [
-			{
-				"name": "asd",
-				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1"
-			},
-			{
-				"name": "asdasd",
-				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1"
-			},
-			{
-				"name": "asdasdadasd",
-				"version": "1.9.1",
-				"url": "http://code.jquery.com/jquery-1.9.1"
+				"name": "ember.com",
+				"urls": [
+					"http://builds.emberjs.com/tags/v1.4.0/ember.js",
+					"http://builds.emberjs.com/tags/v1.4.0/ember.min.js"
+				]
 			}
 		]
 	}
