@@ -45,7 +45,7 @@
 		<div class="item" ng-repeat="lib in libs | filter: libsSearch">
 			<h3>{{lib.name}} - {{lib.ver}}</h3>
 			<div class="cdns">
-				<a href="#" class="button" ng-repeat="cdn in lib.cdns" ng-click="sendToInput(cdn.url)">
+				<a href="#" class="button" ng-repeat="cdn in lib.cdns" ng-click="sendToInput(cdn.urls[0])">
 					{{cdn.name}}
 				</a>
 			</div>
