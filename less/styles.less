@@ -18,7 +18,7 @@ h2 {
 	padding: 20px 0 10px;
 }
 h3 {
-	margin: 10px;
+	margin: 0;
 	font-size: 20px;
 }
 
@@ -95,9 +95,14 @@ header {
 	flex-basis: 47%;
 	text-align: center;
 	border-left: 3px solid @grey-light;
-	background: @blue-dark;
 	color: @grey-light;
 	margin-bottom: 10px;
+	h3 {
+		display: inline-block;
+		width: 100%;
+		background: @blue-dark;
+		padding: 10px 0;
+	}
 	a:nth-child(odd) {
 		background: @blue-medium;
 	}

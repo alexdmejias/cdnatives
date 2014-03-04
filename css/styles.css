@@ -64,7 +64,7 @@ h2 {
 }
 /* line 20, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
 h3 {
-  margin: 10px;
+  margin: 0;
   font-size: 20px;
 }
 /* line 25, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
@@ -146,43 +146,49 @@ header {
   flex-basis: 47%;
   text-align: center;
   border-left: 3px solid #ecf0f1;
-  background: #34495e;
   color: #ecf0f1;
   margin-bottom: 10px;
 }
-/* line 101, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+/* line 100, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+.item h3 {
+  display: inline-block;
+  width: 100%;
+  background: #34495e;
+  padding: 10px 0;
+}
+/* line 106, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
 .item a:nth-child(odd) {
   background: #2980b9;
 }
-/* line 104, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+/* line 109, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
 .item a:hover,
 .item a:nth-child(odd):hover {
   background: #34495e;
 }
 @media only screen and (min-width: 650px) {
-  /* line 110, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+  /* line 115, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
   .wrap {
     width: 90%;
   }
-  /* line 114, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+  /* line 119, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
   .intro {
     flex-direction: row;
   }
-  /* line 117, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+  /* line 122, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
   .item {
     flex-basis: 33.3333%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 123, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+  /* line 128, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
   .wrap {
     width: 70%;
   }
-  /* line 126, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+  /* line 131, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
   .instructions {
     flex: 3 0 0;
   }
-  /* line 129, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
+  /* line 134, /Users/alex/Dropbox/www/cdnatives/less/styles.less */
   .item {
     flex-basis: 25%;
   }
