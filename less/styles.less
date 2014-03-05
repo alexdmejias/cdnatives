@@ -19,6 +19,7 @@ body {
 h2 {
 	margin: 0;
 	padding: 20px 0 10px;
+	text-shadow: 1px 1px 0 #2980b9;
 }
 h3 {
 	margin: 0;
@@ -68,13 +69,13 @@ input[type=text] {
 header {
 	color: white;
 	background: @blue-dark;
-	border-bottom: 2px solid @blue-light;
-	padding: 0 30px;
+	border-bottom: 3px solid @blue-light;
+	padding: 0 5%;
 }
 
 .intro {
-	display: -ms-flexbox;
-	display: -webkit-flexbox;
+	// display: -ms-flexbox;
+	// display: -webkit-flexbox;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -137,10 +138,6 @@ footer {
 	margin: 15px;
 }
 @media only screen and (min-width:650px) {
-	main {
-		width: 90%
-	}
-
 	.intro {
 		flex-direction: row;
 	}
