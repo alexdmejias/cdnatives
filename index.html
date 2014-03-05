@@ -18,39 +18,40 @@
 		<h2>CDNatives</h2>
 	</header>
 
-	<div class="wrap intro">
-		<div class="instructions">
-			<h4>Getting Started</h4>
-			<p>CDNatives is a simple search tool for JS libraries that you can easily access through different alternatives. Simple click on a CDN and Cmd+C and you should be all set! If you would like to add another CDN or library simply submit a pull request to the <a href="https://github.com/amejias101/cdnatives">Github</a> repo.</p>
-			<label for="search">Search: </label>
-			<input type="search" ng-model="libsSearch" placeholder="eg: jQuery">
-			<label for="url">URL: </label>
-			<input type="text" placeholder="" ng-model="toCopy" select-on-change readonly />
-		</div>
-		<div class="controls">
-			<h4>Options</h4>
-			<div data-option="tags" class="clearfix">
-				<span>Script Tags:</span>
-				<a href="" class="button-small" ng-class="{active: optionTags}" ng-click="toggleOption('optionTags')">On</a>
-				<a href="" class="button-small" ng-class="{active: !optionTags}" ng-click="toggleOption('optionTags')">Off</a>
+	<main>
+		<div class="intro">
+			<div class="instructions">
+				<h4>Getting Started</h4>
+				<p>CDNatives is a simple search tool for JS libraries that you can easily access through different alternatives. Simple click on a CDN and Cmd+C and you should be all set! If you would like to add another CDN or library simply submit a pull request to the <a href="https://github.com/amejias101/cdnatives">Github</a> repo.</p>
+				<label for="search">Search: </label>
+				<input type="search" ng-model="libsSearch" placeholder="eg: jQuery">
+				<input type="text" placeholder="Click on of the buttons to begin" ng-model="toCopy" select-on-change />
 			</div>
-			<div data-option="tags" class="clearfix">
-				<span>Production:</span>
-				<a href="" class="button-small" ng-class="{active: optionProd}" ng-click="toggleOption('optionProd')">On</a>
-				<a href="" class="button-small" ng-class="{active: !optionProd}" ng-click="toggleOption('optionProd')">Off</a>
-			</div>
-		</div>
-	</div>
-	<div class="wrap content">
-		<div class="item" ng-repeat="lib in libs | filter: libsSearch">
-			<h3>{{lib.name}} {{lib.ver}}</h3>
-			<div class="cdns">
-				<a href="" class="button" ng-repeat="cdn in lib.cdns" ng-click="sendToInput(cdn)">
-					{{cdn.name}}
-				</a>
+			<div class="controls">
+				<h4>Options</h4>
+				<div data-option="tags" class="clearfix">
+					<span>Script Tags:</span>
+					<a href="" class="button-small" ng-class="{active: optionTags}" ng-click="toggleOption('optionTags')">On</a>
+					<a href="" class="button-small" ng-class="{active: !optionTags}" ng-click="toggleOption('optionTags')">Off</a>
+				</div>
+				<div data-option="tags" class="clearfix">
+					<span>Production:</span>
+					<a href="" class="button-small" ng-class="{active: optionProd}" ng-click="toggleOption('optionProd')">On</a>
+					<a href="" class="button-small" ng-class="{active: !optionProd}" ng-click="toggleOption('optionProd')">Off</a>
+				</div>
 			</div>
 		</div>
-	</div>
+		<div class="content">
+			<div class="item" ng-repeat="lib in libs | filter: libsSearch">
+				<h3>{{lib.name}} {{lib.ver}}</h3>
+				<div class="cdns">
+					<a href="" class="button" ng-repeat="cdn in lib.cdns" ng-click="sendToInput(cdn)">
+						{{cdn.name}}
+					</a>
+				</div>
+			</div>
+		</div>
+	</main>
 
 	<footer>
 		<a href="http://alexdmejias.com">Alex Mejias</a>

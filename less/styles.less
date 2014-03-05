@@ -11,6 +11,9 @@
 
 body {
 	background: @grey-light;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 
 h2 {
@@ -33,6 +36,19 @@ a {
 	border-bottom: 2px solid @blue-light;
 	background: @blue-dark;
 }
+
+p {
+	line-height: 1.5;
+}
+
+input {
+	font-size: 16px;
+}
+
+input[type=text] {
+	width: 100%;
+}
+
 .button {
 	text-decoration: none;
 	padding: 34px 10px;
@@ -47,11 +63,6 @@ a {
 	&:hover {
 		background: @active-button-background;
 	}
-}
-
-.wrap {
-	margin:0 auto;
-	width: 90%;
 }
 
 header {
@@ -91,7 +102,11 @@ header {
 		background: @active-button-background;
 	}
 }
-
+main {
+	flex: 1;
+	margin:0 auto;
+	width: 90%;
+}
 .content {
 	display: flex;
 	flex-wrap: wrap;
@@ -122,7 +137,7 @@ footer {
 	margin: 15px;
 }
 @media only screen and (min-width:650px) {
-	.wrap {
+	main {
 		width: 90%
 	}
 
@@ -139,9 +154,17 @@ footer {
 		flex-basis: 32%;
 	}
 }
+@media only screen and (min-width:850px) {
+	.instructions {
+		max-width: 70%;
+	}
+	.controls {
+		max-width: 20%;
+	}
+}
 
 @media only screen and (min-width:1024px) {
-	.wrap {
+	main {
 		width: 70%
 	}
 
