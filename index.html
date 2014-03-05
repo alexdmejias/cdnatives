@@ -31,13 +31,13 @@
 			<h4>Options</h4>
 			<div data-option="tags" class="clearfix">
 				<span>Script Tags:</span>
-				<a href="#" class="button-small" ng-class="{active: optionTags}" ng-click="toggleOption('optionTags')">On</a>
-				<a href="#" class="button-small" ng-class="{active: !optionTags}" ng-click="toggleOption('optionTags')">Off</a>
+				<a href="" class="button-small" ng-class="{active: optionTags}" ng-click="toggleOption('optionTags')">On</a>
+				<a href="" class="button-small" ng-class="{active: !optionTags}" ng-click="toggleOption('optionTags')">Off</a>
 			</div>
 			<div data-option="tags" class="clearfix">
 				<span>Production:</span>
-				<a href="#" class="button-small" ng-class="{active: optionProd}" ng-click="toggleOption('optionProd')">On</a>
-				<a href="#" class="button-small" ng-class="{active: !optionProd}" ng-click="toggleOption('optionProd')">Off</a>
+				<a href="" class="button-small" ng-class="{active: optionProd}" ng-click="toggleOption('optionProd')">On</a>
+				<a href="" class="button-small" ng-class="{active: !optionProd}" ng-click="toggleOption('optionProd')">Off</a>
 			</div>
 		</div>
 	</div>
@@ -45,14 +45,14 @@
 		<div class="item" ng-repeat="lib in libs | filter: libsSearch">
 			<h3>{{lib.name}} - {{lib.ver}}</h3>
 			<div class="cdns">
-				<a href="#" class="button" ng-repeat="cdn in lib.cdns" ng-click="sendToInput(cdn)">
+				<a href="" class="button" ng-repeat="cdn in lib.cdns" ng-click="sendToInput(cdn)">
 					{{cdn.name}}
 				</a>
 			</div>
 		</div>
 	</div>
-	<script src="/js/vendor/angular/angular.min.js"></script>
+	<script src="js/vendor/angular/angular.min.js"></script>
 
-	<script src="/js/script.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
