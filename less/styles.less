@@ -22,7 +22,18 @@ h3 {
 	font-size: 20px;
 }
 
+h4 {
+	margin-bottom: 10px;
+}
+
 a {
+	text-decoration: none;
+	color: white;
+	padding: 2px 4px;
+	border-bottom: 2px solid @blue-light;
+	background: @blue-dark;
+}
+.button {
 	text-decoration: none;
 	padding: 34px 10px;
 	background: @blue-light;
@@ -38,25 +49,16 @@ a {
 	}
 }
 
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf:after {
-    clear: both;
-}
-
 .wrap {
 	margin:0 auto;
 	width: 90%;
 }
 
 header {
-	text-align: center;
 	color: white;
-	background: @grey-dark;
+	background: @blue-dark;
+	border-bottom: 2px solid @blue-light;
+	padding: 0 30px;
 }
 
 .intro {
@@ -64,6 +66,10 @@ header {
 	display: -webkit-flexbox;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
+	border-bottom: 1px solid @grey;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
 }
 
 .instructions {
@@ -76,6 +82,7 @@ header {
 		display: block;
 	}
 	a {
+		.button();
 		padding: 3px 9px;
 		float: left;
 		width: 50%;
@@ -85,16 +92,15 @@ header {
 	}
 }
 
-
 .content {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+	justify-content: space-between;
 }
 .item {
 	flex-basis: 47%;
 	text-align: center;
-	border-left: 3px solid @grey-light;
 	color: @grey-light;
 	margin-bottom: 10px;
 	h3 {
@@ -109,7 +115,11 @@ header {
 	a:hover, a:nth-child(odd):hover {
 		background: @active-button-background;
 	}
+}
 
+footer {
+	text-align: center;
+	margin: 15px;
 }
 @media only screen and (min-width:650px) {
 	.wrap {
@@ -119,8 +129,14 @@ header {
 	.intro {
 		flex-direction: row;
 	}
+	.instructions {
+		max-width: 50%;
+	}
+	.controls {
+		max-width: 30%;
+	}
 	.item {
-		flex-basis: 33.3333%;
+		flex-basis: 32%;
 	}
 }
 
@@ -128,10 +144,16 @@ header {
 	.wrap {
 		width: 70%
 	}
+
 	.instructions {
 		flex: 3 0 0;
+		max-width: 50%;
+	}
+
+	.controls {
+		max-width: 15%;
 	}
 	.item {
-		flex-basis: 25%;
+		flex-basis: 24%;
 	}
 }

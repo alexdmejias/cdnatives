@@ -14,17 +14,17 @@
 </head>
 <body ng-controller="cdnController">
 
-	<header class="wrap">
+	<header>
 		<h2>CDNatives</h2>
-		<hr />
 	</header>
 
 	<div class="wrap intro">
 		<div class="instructions">
 			<h4>Getting Started</h4>
-			<p>intro par.</p>
+			<p>CDNatives is a simple search tool for JS libraries that you can easily access through different alternatives. Simple click on a CDN and Cmd+C and you should be all set! If you would like to add another CDN or library simply submit a pull request to the <a href="https://github.com/amejias101/cdnatives">Github</a> repo.</p>
 			<label for="search">Search: </label>
 			<input type="search" ng-model="libsSearch" placeholder="eg: jQuery">
+			<label for="url">URL: </label>
 			<input type="text" placeholder="" ng-model="toCopy" select-on-change readonly />
 		</div>
 		<div class="controls">
@@ -43,7 +43,7 @@
 	</div>
 	<div class="wrap content">
 		<div class="item" ng-repeat="lib in libs | filter: libsSearch">
-			<h3>{{lib.name}} - {{lib.ver}}</h3>
+			<h3>{{lib.name}} {{lib.ver}}</h3>
 			<div class="cdns">
 				<a href="" class="button" ng-repeat="cdn in lib.cdns" ng-click="sendToInput(cdn)">
 					{{cdn.name}}
@@ -51,6 +51,11 @@
 			</div>
 		</div>
 	</div>
+
+	<footer>
+		<a href="http://alexdmejias.com">Alex Mejias</a>
+	</footer>
+
 	<script src="js/vendor/angular/angular.min.js"></script>
 
 	<script src="js/script.js"></script>
