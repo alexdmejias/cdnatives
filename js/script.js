@@ -8,9 +8,22 @@ cdnApp.controller('cdnController', function($scope, $http) {
     $scope.toCopy = 'no cdn selected';
     $scope.optionTags = false;
     $scope.optionProd = false;
+    $scope.currentCdn = '';
 
-    $scope.sendToInput = function(w) {
-        $scope.toCopy = w;
+    $scope.sendToInput = function(cdn) {
+        $scope.currentCdn = cdn;
+
+        var url = $scope.currentCdn.urls[0];
+
+        if ($scope.optionProd === true) {
+            url = cdn.urls[1]
+        }
+
+        if ($scope.optionTags === true) {
+            url = '<script src="' + url + '"></script>';
+        }
+
+        $scope.toCopy = url;
     }
 
     $scope.toggleOption = function(option) {
@@ -19,7 +32,10 @@ cdnApp.controller('cdnController', function($scope, $http) {
         } else {
             $scope[option] = true;
         }
+
+        $scope.sendToInput($scope.currentCdn);
     }
+
 
 });
 
