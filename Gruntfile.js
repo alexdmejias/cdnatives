@@ -33,7 +33,7 @@ module.exports = function(grunt) {
         options: {
           dumpLineNumbers: 'comments'
         },
-        src: ['less/styles.less'],
+        src: 'less/styles.less',
         dest: 'css/styles.css'
       }
     },
@@ -47,6 +47,13 @@ module.exports = function(grunt) {
         files: {
           'css/styles.min.css': 'index.html'
         }
+      }
+    },
+
+    autoprefixer: {
+      dist: {
+        src: 'css/styles.css',
+        dest: 'css/styles.css'
       }
     },
 
