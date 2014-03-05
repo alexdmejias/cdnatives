@@ -1,14 +1,15 @@
 var cdnApp = angular.module('cdnApp', []);
 
 cdnApp.controller('cdnController', function($scope, $http) {
-    $http.get('data/cdn_data.json').success(function(data) {
-        $scope.libs = data;
-    });
-
-    $scope.toCopy = 'no cdn selected';
     $scope.optionTags = false;
     $scope.optionProd = false;
-    $scope.currentCdn = '';
+
+    $http.get('data/cdn_data.json').success(function(data) {
+        $scope.libs = data;
+        $scope.currentCdn = $scope.libs[0]['cdns'][0];
+        $scope.toCopy = $scope.currentCdn.urls[0];
+    });
+
 
     $scope.sendToInput = function(cdn) {
         $scope.currentCdn = cdn;
